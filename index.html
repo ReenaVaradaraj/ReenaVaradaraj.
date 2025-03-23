@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>REENA V</h1>
+            <p>BACHELOR OF COMPUTER APPLICATION </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates </a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a <b> REENA V</b> "I am passionate about creating dynamic, user-friendly web applications that provide seamless digital solutions. As a recent graduate with a strong foundation in web development, I am eager to apply my skills in front-end and back-end technologies. I am committed to continuously learning and staying up-to-date with the latest trends and innovations in the web development landscape, striving to grow into a well-rounded developer."</p>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Madras University </p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>HTML&CSS</li>
+                <li>Cybersecurity</li>
+                 <li>java</li>
+                 </ul>
+        </div>
+    </section>
+
+    <section id="CERTIFICATE">
+        <div class="section-content">
+            <h2>CERTIFICATE</h2>
+            <ul>
+                <li> Cybersecurity Analyst Job Simulation</li>
+                <li> Object Oriented Programming using Python</li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+<section id="PROJECT">
+
+<div class="section-content">
+
+<center>
+
+<h2>Project</h2>
+
+<a href="https://1drv.ms/b/c/8d178e943c52ee14/Ef6fjjvJWKVJt77TjPXIIusB3brVl4EyFQEzW9Tt96V4rA?e=dsa24m" target="_blank"
+
+class="download-button">Download</a>
+
+</center>
+
+</div>
+
+</section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="https://1drv.ms/b/c/8d178e943c52ee14/ESYFJPJPXN9Nt-FIzVYWu9gBVsUU3S656ydRW3NDc5rm4A?e=YbK8p1" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 REENA</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
